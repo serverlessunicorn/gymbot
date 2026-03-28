@@ -5,6 +5,10 @@ on:
     branches:
       - main  # This triggers the deploy every time you push to main
 
+env:
+  # Silence warnings by forcing runner onto Node 24
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
