@@ -1,0 +1,6 @@
+# .claspignore
+**/**
+!src/**
+!appscript.json
+.git/**
+node_modules/**
